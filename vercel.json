@@ -1,0 +1,4 @@
+{
+  "buildCommand": "npx --yes nuxt build",
+  "installCommand": "npm install --ignore-scripts"
+}
