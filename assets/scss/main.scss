@@ -1,0 +1,46 @@
+@use './variables' as *;
+
+:root {
+  --bg: #ECEEF0;
+  --white: #ffffff;
+  --text-dark: #1c2b3a;
+  --text-gray: #7a8fa6;
+  --text-light: #aab6c8;
+  --card-day: #DAE9F8;
+  --border: #eef1f6;
+}
+
+.dark {
+  --bg: #000000;
+  --white: #1a1919;
+  --text-dark: #ffffff;
+  --text-gray: #cccccc;
+  --text-light: #eeeeee;
+  --card-day: #333333;
+  --border: #777777;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font;
+  background: $bg;
+  color: $text-dark;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: $font;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+img {
+  display: block;
+}
