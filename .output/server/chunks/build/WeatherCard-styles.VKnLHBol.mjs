@@ -1,0 +1,8 @@
+const WeatherCard_vue_vue_type_style_index_0_scoped_b6994778_lang = ".weather-card[data-v-b6994778]{background:var(--white);border:1.5px solid var(--border);border-radius:18px;flex-direction:column;min-height:220px;padding:28px}.weather-card[data-v-b6994778],.weather-card__top[data-v-b6994778]{display:flex;justify-content:space-between}.weather-card__top[data-v-b6994778]{align-items:flex-start}.weather-card__temp[data-v-b6994778]{color:#4a9eff;font-size:72px;font-weight:800;line-height:1}.weather-card__day[data-v-b6994778]{color:var(--text-dark);font-size:24px;font-weight:700;margin-top:4px}.weather-card__icon[data-v-b6994778]{flex-shrink:0;height:96px;-o-object-fit:contain;object-fit:contain;width:96px}.weather-card__bottom[data-v-b6994778]{display:flex;flex-direction:column;gap:4px;margin-top:16px}.weather-card__info[data-v-b6994778]{color:var(--text-gray);font-size:13.5px;font-weight:600}";
+
+const WeatherCardStyles_VKnLHBol = [
+  WeatherCard_vue_vue_type_style_index_0_scoped_b6994778_lang
+];
+
+export { WeatherCardStyles_VKnLHBol as default };
+//# sourceMappingURL=WeatherCard-styles.VKnLHBol.mjs.map
