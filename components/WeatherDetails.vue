@@ -1,11 +1,6 @@
 <template>
   <div class="details">
-    <img
-      :src="ICONS.bigCloud"
-      alt=""
-      class="details__cloud-bg"
-      style="width: 100%; height: 100%" />
-
+    <img :src="ICONS.bigCloud" alt="" class="details__cloud-bg" />
     <ul class="details__list">
       <li class="details__row">
         <img :src="ICONS.temperature" alt="" class="details__icon" />
@@ -66,17 +61,29 @@ defineProps({
   overflow: hidden;
 
   // Облако на фоне (позиционируем в правый верхний угол)
+  // &__cloud-bg {
+  //   position: absolute;
+  //   right: -20px;
+  //   top: -10px;
+  //   width: 450px;
+  //   height: 250px;
+  //   object-fit: cover;
+  //   opacity: 0.9;
+  //   pointer-events: none; // чтобы не мешало кликам
+  // }
+
   &__cloud-bg {
     position: absolute;
-    right: -40px;
-    top: -30px;
-    width: 420px;
-    height: 240px;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
     object-fit: cover;
+    object-position: left center;
     opacity: 0.9;
-    pointer-events: none; // чтобы не мешало кликам
+    pointer-events: none;
   }
-
   // Список строк с деталями
   &__list {
     list-style: none;

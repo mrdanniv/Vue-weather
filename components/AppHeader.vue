@@ -1,6 +1,5 @@
 <template>
   <header class="header">
-
     <!-- Логотип -->
     <div class="header__logo">
       <img src="/img/logo.svg" alt="Vue Weather" class="header__logo-img" />
@@ -14,27 +13,25 @@
         :src="ICONS.theme"
         alt="Тема"
         class="header__theme-btn"
-        @click="$emit('toggleTheme')"
-      />
+        @click="$emit('toggleTheme')" />
 
       <!-- Выбрать город -->
       <button class="header__city-btn" @click="$emit('openModal')">
         Выбрать город
       </button>
     </div>
-
   </header>
 </template>
 
 <script setup>
-import { ICONS } from '@/assets/icons.js'
+import { ICONS } from "@/assets/icons.js";
 
 // Какие события компонент отправляет наверх
-defineEmits(['toggleTheme', 'openModal'])
+defineEmits(["toggleTheme", "openModal"]);
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/scss/variables' as *;
+@use "@/assets/scss/variables" as *;
 
 .header {
   display: flex;
@@ -89,6 +86,13 @@ defineEmits(['toggleTheme', 'openModal'])
     &__right {
       width: 100%;
       justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .details__cloud-bg {
+      width: 100px;
+      height: 100px;
     }
   }
 }
